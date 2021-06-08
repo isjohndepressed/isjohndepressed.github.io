@@ -1,8 +1,9 @@
 <html manifest="app.appcache">
-<head><meta name="robots" content="noindex"><title>🙂 No</title></head>
-<body style="background: lightblue; color: black; padding: 100px; text-align: center">
+<head><meta name="robots" content="noindex"><title>😔 Yes</title></head>
+<body style="background: black; color: white; padding: 100px; text-align: center">
   <style>p {font-size: large; width: 100%}</style>
-  <p style="margin 20px; font-size: xx-large !important">🙂 No</p>
-  <p>Urgent communications returned within 72 hours.</p>
+  <p style="margin 20px; font-size: xx-large !important">😔 Yes</p>
+  <p>Check back in <i>2</i> weeks.</p>
+  <p>Do <b><u>not</u></b> expect phone calls or e-mails to be returned.</p>
 </body>
 </html>
