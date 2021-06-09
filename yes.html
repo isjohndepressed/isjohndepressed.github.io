@@ -125,7 +125,7 @@
   }
 
   document.querySelector('.rain').innerHTML = drops;
-  getElememtById('hearts').innerText = sessionStorage.getItem('hearts');
+  window.getElememtById('hearts').innerText = sessionStorage && sessionStorage.getItem('hearts');
   </script>
 </body>
 </html>
