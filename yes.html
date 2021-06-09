@@ -105,7 +105,6 @@
   <button style="margin: 70px;" onclick="getElementById('hearts').innerText += ' ❤️';sessionStorage.setItem('hearts',getElementById('hearts').innerText);">Leave a ❤️</button>
   <p id="hearts" class="big"></p>
   <script>
-  getElememtById('hearts').innerText = sessionStorage.getItem('hearts');
   // Source: https://codepen.io/arickle/pen/XKjMZY
   var increment = 0;
   var drops = "";
@@ -126,6 +125,7 @@
   }
 
   document.querySelector('.rain').innerHTML = drops;
+  getElememtById('hearts').innerText = sessionStorage.getItem('hearts');
   </script>
 </body>
 </html>
