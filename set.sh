@@ -1,5 +1,5 @@
 git reset --hard HEAD
 git pull
-cat index.html.$1 > index.html
+cat $1.html > index.html
 git commit -am "depressed 😔"
 git push
