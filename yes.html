@@ -102,7 +102,7 @@
   <p class="big">😔 Yes</p>
   <p>Check back in <i>2</i> weeks.</p>
   <p>Do <b><u>not</u></b> expect phone calls or e-mails to be returned.</p>
-  <button style="margin: 70px;" onclick="getElementById('hearts').innerText += ' ❤️';sessionStorage.setItem('hearts',getElementById('hearts').innerText);">Leave a ❤️</button>
+  <button style="margin: 70px;" onclick="addHeart()">Leave a ❤️</button>
   <p id="hearts" class="big"></p>
   <script>
   // Source: https://codepen.io/arickle/pen/XKjMZY
@@ -125,7 +125,14 @@
   }
 
   document.querySelector('.rain').innerHTML = drops;
-  if (sessionStorage.getItem('hearts')) getElememtById('hearts').innerText = sessionStorage.getItem('hearts');
+  
+  // hearts
+  const hearts = getElementById('hearts');
+  const startHearts = sessionStorage.getItem('hearts') || '';
+  function addHeart() {
+    hearts.innerText += ' ❤️';
+    sessionStorage.setItem('hearts', hearts.innerText);
+  }
   </script>
 </body>
 </html>
