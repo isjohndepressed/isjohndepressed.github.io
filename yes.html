@@ -132,7 +132,7 @@
     hearts.innerText += ' ❤️';
     localStorage.setItem('hearts', hearts.innerText);
   }
-  hearts.innerText = localStorage.getItem('hearts') || '';
+  hearts.innerText = localStorage && localStorage.getItem('hearts') || '';
   </script>
 </body>
 </html>
