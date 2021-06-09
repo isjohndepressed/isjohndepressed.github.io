@@ -130,9 +130,9 @@
   const hearts = getElementById('hearts');
   function addHeart() {
     hearts.innerText += ' ❤️';
-    localStorage.setItem('hearts', hearts.innerText);
+    // localStorage.setItem('hearts', hearts.innerText);
   }
-  hearts.innerText = localStorage && localStorage.getItem('hearts') || '';
+  // hearts.innerText = localStorage && localStorage.getItem('hearts') || '';
   </script>
 </body>
 </html>
