@@ -128,11 +128,11 @@
   
   // hearts
   const hearts = getElementById('hearts');
-  const startHearts = sessionStorage.getItem('hearts') || '';
   function addHeart() {
     hearts.innerText += ' ❤️';
-    sessionStorage.setItem('hearts', hearts.innerText);
+    localStorage.setItem('hearts', hearts.innerText);
   }
+  const startHearts = localStorage.getItem('hearts') || '';
   </script>
 </body>
 </html>
