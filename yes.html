@@ -1,3 +1,4 @@
+
 <html manifest="app.appcache">
 <head>
   <meta name="robots" content="noindex">
@@ -102,7 +103,7 @@
   <p class="big">😔 Yes</p>
   <p>Check back in <i>2</i> weeks.</p>
   <p>Do <b><u>not</u></b> expect phone calls or e-mails to be returned.</p>
-  <button style="margin: 70px;" onclick="addHeart()">Leave a ❤️</button>
+  <button style="margin: 70px;" onclick="getElementById('hearts').innerText += ' ❤️';">Leave a ❤️</button>
   <p id="hearts" class="big"></p>
   <script>
   // Source: https://codepen.io/arickle/pen/XKjMZY
@@ -125,14 +126,6 @@
   }
 
   document.querySelector('.rain').innerHTML = drops;
-  
-  // hearts
-  const hearts = getElementById('hearts');
-  function addHeart() {
-    hearts.innerText += ' ❤️';
-    // localStorage.setItem('hearts', hearts.innerText);
-  }
-  // hearts.innerText = localStorage && localStorage.getItem('hearts') || '';
   </script>
 </body>
 </html>
